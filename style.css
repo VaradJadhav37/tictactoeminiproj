@@ -1,0 +1,120 @@
+body {
+    text-align: center;
+    display: grid;
+    grid-template-columns: 500px;
+    grid-template-rows: auto;
+    place-content: center;
+    background-color: white; 
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gamecontainer {
+    width: 600px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 500px;
+    height: 500px;
+}
+
+.tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 1px;
+    background-color: #19376D; 
+    color: #A5D7E8; 
+}
+
+.tile:hover {
+    background-color: #042769; 
+    transform: scale(1.04);
+    box-shadow: 0px 0px 0px 2px #A5D7E8; 
+}
+
+.tile:nth-child(1) {
+    border-right: 2px solid #A5D7E8;
+    border-bottom: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(2) {
+    border-right: 2px solid #A5D7E8;
+    border-bottom: 2px solid #A5D7E8;
+    border-left: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(3) {
+    border-left: 2px solid #A5D7E8;
+    border-bottom: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(4) {
+    border-top: 2px solid #A5D7E8;
+    border-right: 2px solid #A5D7E8;
+    border-bottom: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(5) {
+    border: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(6) {
+    border-top: 2px solid #A5D7E8;
+    border-left: 2px solid #A5D7E8;
+    border-bottom: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(7) {
+    border-top: 2px solid #A5D7E8;
+    border-right: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(8) {
+    border-right: 2px solid #A5D7E8;
+    border-top: 2px solid #A5D7E8;
+    border-left: 2px solid #A5D7E8;
+}
+
+.tile:nth-child(9) {
+    border-top: 2px solid #A5D7E8;
+    border-left: 2px solid #A5D7E8;
+}
+
+.win {
+    font-family: "Courier New", "Lucida Console", monospace;
+    place-self: center;
+}
+
+@media (max-width: 600px) {
+    body{
+        place-items: center;
+    }
+    .gamecontainer{
+      width: 300px;
+      height: 300px;
+      place-self: center;
+      background-color: aliceblue;
+    }
+  }
+  .reset button{
+    font-family: "Courier New", "Lucida Console", monospace;
+    font-weight: 700;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 7px;
+    background-color:#A5D7E8;
+    color:#19376D;
+    border: 3px solid #19376D;
+  }
+  .reset button:hover{
+    background-color:  #19376D;
+    color: #A5D7E8;
+}
+.heading:hover{
+    letter-spacing: 6px;
+   
+}
